@@ -1,0 +1,20 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>Upload</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+	<p>Result files are in target directory!</p>
+	<table>
+		<tr>
+			<th>Word</th>
+			<th>Count</th>
+		</tr>
+		<tr th:each="element : ${files}">
+			<td th:text="${element.key}">keyvalue</td>
+			<td th:text="${element.value}">keyvalue</td>
+		</tr>
+	</table>
+</body>
+</html>
